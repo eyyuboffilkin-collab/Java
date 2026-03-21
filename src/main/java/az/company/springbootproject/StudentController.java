@@ -9,7 +9,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/students")
-@CrossOrigin(origins = "*") //frontend ucun
+@CrossOrigin(origins = "*") //frontend
 public class StudentController {
         @Autowired
         private StudentRepository studentRepository;
