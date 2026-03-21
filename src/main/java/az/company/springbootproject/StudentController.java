@@ -1,34 +1,18 @@
 package az.company.springbootproject;
 
-<<<<<<< HEAD
-=======
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.ResponseEntity;
->>>>>>> 905084f (Student Hub)
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
 @RestController
 @RequestMapping("/students")
-<<<<<<< HEAD
 @CrossOrigin(origins = "*") //frontend ucun
 public class StudentController {
-=======
-@CrossOrigin(origins = "*") //frontend u
-public class StudentController {
-    @Autowired
-    private StudentRepository studentRepository;
->>>>>>> 905084f (Student Hub)
     private final StudentService service;
 
     public StudentController(StudentService service) {
         this.service = service;
     }
-<<<<<<< HEAD
-=======
-
->>>>>>> 905084f (Student Hub)
     @GetMapping("/all")
     public List<Student> getAllStudents(){
         return service.getAll();
@@ -42,17 +26,4 @@ public class StudentController {
     public List<Student> search(@RequestParam String query){
         return service.searchStudents(query);
     }
-<<<<<<< HEAD
-=======
-    @DeleteMapping("/delete/{id}")
-    public ResponseEntity<?> deleteStudent(@PathVariable Long id) {
-        if (studentRepository.existsById(id)) {
-            studentRepository.deleteById(id);
-            return ResponseEntity.ok().build();
-        } else {
-            return ResponseEntity.notFound().build();
-        }
-
-}
->>>>>>> 905084f (Student Hub)
 }

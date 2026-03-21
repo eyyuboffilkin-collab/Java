@@ -1,7 +1,4 @@
 <<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 905084f (Student Hub)
 HELP.md
 target/
 .mvn/wrapper/maven-wrapper.jar
@@ -9,7 +6,6 @@ target/
 !**/src/test/**/target/
 
 ### STS ###
-<<<<<<< HEAD
 =======
 ### IntelliJ IDEA ###
 out/
@@ -19,8 +15,6 @@ out/
 
 ### Eclipse ###
 >>>>>>> 50b4832 (BankAccount)
-=======
->>>>>>> 905084f (Student Hub)
 .apt_generated
 .classpath
 .factorypath
@@ -29,23 +23,17 @@ out/
 .springBeans
 .sts4-cache
 <<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 905084f (Student Hub)
 
 ### IntelliJ IDEA ###
 .idea
 *.iws
 *.iml
 *.ipr
-<<<<<<< HEAD
 =======
 bin/
 !**/src/main/**/bin/
 !**/src/test/**/bin/
 >>>>>>> 50b4832 (BankAccount)
-=======
->>>>>>> 905084f (Student Hub)
 
 ### NetBeans ###
 /nbproject/private/
@@ -54,16 +42,12 @@ bin/
 /nbdist/
 /.nb-gradle/
 <<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 905084f (Student Hub)
 build/
 !**/src/main/**/build/
 !**/src/test/**/build/
 
 ### VS Code ###
 .vscode/
-<<<<<<< HEAD
 =======
 
 ### VS Code ###
@@ -72,5 +56,3 @@ build/
 ### Mac OS ###
 .DS_Store
 >>>>>>> 50b4832 (BankAccount)
-=======
->>>>>>> 905084f (Student Hub)
