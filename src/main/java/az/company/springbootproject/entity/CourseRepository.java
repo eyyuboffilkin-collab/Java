@@ -1,4 +1,4 @@
-package az.company.springbootproject;
+package az.company.springbootproject.entity;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;

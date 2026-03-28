@@ -1,4 +1,4 @@
-package az.company.springbootproject;
+package az.company.springbootproject.entity;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;

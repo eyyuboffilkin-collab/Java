@@ -1,4 +1,4 @@
-package az.company.springbootproject;
+package az.company.springbootproject.entity;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;
@@ -10,7 +10,6 @@ public class CorsConfig implements WebMvcConfigurer {
     public void addCorsMappings(CorsRegistry registry){
         registry.addMapping("/api/**")
                 .allowedOrigins("http://localhost:3000")
-                .allowedOriginPatterns("https://localhost:8080")
                 .allowedMethods("GET", "POST", "PUT", "DELETE")
                 .allowedHeaders("*")
                 .allowCredentials(true);
