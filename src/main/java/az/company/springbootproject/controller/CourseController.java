@@ -1,6 +1,7 @@
-package az.company.springbootproject.entity;
+package az.company.springbootproject.controller;
 
-import org.springframework.beans.factory.annotation.Autowired;
+import az.company.springbootproject.entity.Course;
+import az.company.springbootproject.repository.CourseRepository;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -11,8 +12,12 @@ import java.util.List;
 @CrossOrigin(origins = "http://localhost:3000")
 public class CourseController {
 
-    @Autowired
-    private CourseRepository courseRepository;
+
+    private final CourseRepository courseRepository;
+
+    public CourseController(CourseRepository courseRepository) {
+        this.courseRepository = courseRepository;
+    }
 
     @GetMapping("/courses")
     public ResponseEntity<List<Course>> getAllCourses() {

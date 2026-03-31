@@ -1,6 +1,10 @@
-package az.company.springbootproject.entity;
+package az.company.springbootproject.controller;
 
-import org.springframework.beans.factory.annotation.Autowired;
+import az.company.springbootproject.entity.Course;
+import az.company.springbootproject.entity.Student;
+import az.company.springbootproject.service.StudentService;
+import az.company.springbootproject.repository.CourseRepository;
+import az.company.springbootproject.repository.StudentRepository;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
@@ -10,17 +14,23 @@ import java.util.Set;
 
 @RestController
 @RequestMapping("/api")
-@CrossOrigin(origins = "http://localhost:3000")
+//@CrossOrigin(origins = "http://localhost:3000")
 public class StudentController {
 
-    @Autowired
-    private StudentService service;
 
-    @Autowired
-    private StudentRepository studentRepository;
+    private final StudentService service;
 
-    @Autowired
-    private CourseRepository courseRepository;
+
+    private final StudentRepository studentRepository;
+
+
+    private final CourseRepository courseRepository;
+
+    public StudentController(StudentService service, StudentRepository studentRepository, CourseRepository courseRepository) {
+        this.service = service;
+        this.studentRepository = studentRepository;
+        this.courseRepository = courseRepository;
+    }
 
     @PostMapping("/csv/upload")
     public ResponseEntity<String> uploadCsv(@RequestParam("file") MultipartFile file) {

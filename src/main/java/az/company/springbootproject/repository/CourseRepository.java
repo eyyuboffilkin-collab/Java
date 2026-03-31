@@ -1,5 +1,6 @@
-package az.company.springbootproject.entity;
+package az.company.springbootproject.repository;
 
+import az.company.springbootproject.entity.Course;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
